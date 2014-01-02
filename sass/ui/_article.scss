@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $ARTICLE_UI
+\*------------------------------------*/
+
+article {
+    a, a:visited {
+        color: $purple;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+    }
+}
+
+.category {
+    color: $purple;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.7;
+    text-transform: uppercase;
+}

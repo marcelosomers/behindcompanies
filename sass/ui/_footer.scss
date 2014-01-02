@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $FOOTER_UI
+\*------------------------------------*/
+
+.subscribe {
+    height: 105px;
+    border-top: 1px solid $gray-dark;
+    background-color: $gray;
+    overflow: hidden;
+}
+
+.subscribe--text, .subscribe--email, .subscribe--icons {
+    margin-top: 24px;
+}
+
+.subscribe--text {
+    font-size: 14px;
+    line-height: 19px;
+    color: $purple-light;
+}
+
+.subscribe--icons {
+    img {
+        @include float(right);
+    }
+}
+
+.subscribe-box {
+    margin-bottom: 3px;
+}
+
+.subscribe-button {
+    @include float(right);
+}
+
+.footer {
+    background-color: $black;
+    color: $white;
+
+    a, a:visited {
+        color: $white;
+    }
+
+    .nav {
+        li {
+            margin-right: 20px;
+        }
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+    color: $gray-dark;
+    @include float(right);
+}

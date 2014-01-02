@@ -1,0 +1,66 @@
+/*
+Theme Name: Behind Companies 5.0
+Theme URI: http://underscores.me/
+Author: Marcelo Somers
+Author URI: http://behindcompanies.com/
+Description: Description
+Version: 1.0
+License:
+License URI:
+*/
+
+/*------------------------------------*\
+    BEHIND COMPANIES
+\*------------------------------------*/
+/**
+ * Created by Marcelo Somers (@marcelosomers) for Behind Companies
+ * (http://behindcompanies.com).
+ *
+ * This stylesheet is based on the principles of SMACSS (http://smacss.com/)
+ * and Harry Roberts' CSS Guidelines
+ * (https://github.com/csswizardry/CSS-Guidelines)
+ *
+ * LICENSE
+ * [INSERT MY LICENSE HERE]
+ */
+
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............You're reading it!
+ */
+
+
+
+
+
+ /*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/**
+ * Generic utilities (Compass, Normalize, etc.)
+ */
+@import "compass";
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/defaults";
+@import "generic/grid";
+@import "generic/typography";
+
+ /**
+ * Structure - Unstyled objects (i.e., nav, etc.)
+ */
+ @import "structure/header";
+ @import "structure/nav";
+ @import "structure/article";
+
+  /**
+ * UI - Styles for the skin
+ */
+@import "ui/page";
+@import "ui/header";
+@import "ui/nav";
+@import "ui/article";
+@import "ui/footer";
+@import "ui/form";

@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $ARTICLE_STRUCTURE
+\*------------------------------------*/
+
+.category {
+    margin-bottom: 4px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+article {
+    margin-bottom: 45px;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+}
+
+blockquote {
+    padding-left: 20px;
+}

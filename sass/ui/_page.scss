@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+html {
+    font-family: $base-font-family;
+    background-color: $gray-lightest;
+    color: $black;
+}
+
+body {
+    border-top: 5px solid $purple;
+}

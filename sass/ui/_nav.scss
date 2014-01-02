@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $NAV_UI
+\*------------------------------------*/
+
+nav {
+    border-bottom: 1px solid $gray-dark;
+    background: $gray-light;
+}
+
+.nav {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    a, a:hover, a:visited {
+        color: $black;
+        text-decoration: none;
+
+    }
+
+    li {
+        margin-right: 27px;
+    }
+}
+
+.byline {
+    opacity: 0.5;
+}

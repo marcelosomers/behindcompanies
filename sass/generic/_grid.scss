@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/* Each column is 130px
+*  Each gutter is 20px
+*/
+
+$container-size: 130*5+20*4px; // 730px
+$gutter-width: 2.272%;
+
+.container {
+    margin: 0 auto;
+    max-width: $container-size;
+
+    @media only screen and (max-width: $break-full) {
+        margin: 0 20px;
+    }
+}
+
+.content {
+    width: 79.452%;
+    margin-right: $gutter-width;
+
+    @media only screen and (max-width: $break-tablet) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.subscribe--text, .subscribe--email, .subscribe--icons {
+    margin-right: $gutter-width;
+    @include float(left);
+}
+
+.subscribe--text {
+    width: 48.863%
+}
+
+.subscribe--email {
+    width: 31.818%;
+}
+
+.subscribe--icons {
+    width: 12.51%;
+}

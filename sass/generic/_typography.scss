@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+h3 {
+    // Article Section Heading
+    margin: 25px 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $purple;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: $serif-font-family;
+    font-weight: 300;
+}
+
+.title--article {
+    font-size: 24px;
+}
+
+.title--link {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+blockquote {
+    border-left: 2px solid $purple;
+    color: $purple;
+}
+
+pre, code {
+    font-family: $monospace-font;
+    font-size: 13px;
+}
+
+code {
+    color: $purple;
+    background: $gray-medium;
+    padding: 2px 5px;
+}
+
+pre {
+    padding: 15px 20px;
+    @include border-radius(3px);
+    background: $black;
+    color: $white;
+
+    code {
+        background-color: transparent !important;
+        color: $white;
+        line-height: 22px;
+    }
+}
