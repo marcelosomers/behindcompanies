@@ -3,8 +3,21 @@
 \*------------------------------------*/
 
 article {
-    a, a:visited {
-        color: $purple;
+    p {
+        a, a:visited {
+            color: $purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom: 1px solid;
+        }
+    }
+}
+
+.title--article, .title--link {
+    a {
+        color: $black;
         text-decoration: none;
     }
 
@@ -13,10 +26,30 @@ article {
     }
 }
 
+.link-permalink {
+    padding-left: 10px;
+    opacity: 0.2;
+}
+
 .category {
     color: $purple;
     font-size: 13px;
     font-weight: 400;
     opacity: 0.7;
     text-transform: uppercase;
+}
+
+.meta {
+    font-size: 12px;
+    color: $black;
+    opacity: 0.5;
+
+    a, a:visited {
+        text-decoration: none;
+        color: $black;
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+    }
 }

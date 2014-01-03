@@ -22,6 +22,7 @@
 .subscribe--icons {
     img {
         @include float(right);
+        margin-right: 5px;
     }
 }
 
@@ -38,7 +39,7 @@
     color: $white;
 
     a, a:visited {
-        color: $white;
+        color: $white !important;
     }
 
     .nav {

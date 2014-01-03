@@ -738,32 +738,61 @@ nav {
   .nav a, .nav a:hover, .nav a:visited {
     color: #3f3f49;
     text-decoration: none; }
-  /* line 21, sass/ui/_nav.scss */
+  /* line 20, sass/ui/_nav.scss */
+  .nav a:hover {
+    opacity: 0.7; }
+  /* line 24, sass/ui/_nav.scss */
   .nav li {
     margin-right: 27px; }
 
-/* line 26, sass/ui/_nav.scss */
+/* line 29, sass/ui/_nav.scss */
 .byline {
   opacity: 0.5; }
 
 /*------------------------------------*\
     $ARTICLE_UI
 \*------------------------------------*/
-/* line 6, sass/ui/_article.scss */
-article a, article a:visited {
+/* line 7, sass/ui/_article.scss */
+article p a, article p a:visited {
   color: #677295;
   text-decoration: none; }
-/* line 11, sass/ui/_article.scss */
-article a:hover {
+/* line 12, sass/ui/_article.scss */
+article p a:hover {
   border-bottom: 1px solid; }
 
-/* line 16, sass/ui/_article.scss */
+/* line 19, sass/ui/_article.scss */
+.title--article a, .title--link a {
+  color: #3f3f49;
+  text-decoration: none; }
+/* line 24, sass/ui/_article.scss */
+.title--article a:hover, .title--link a:hover {
+  border-bottom: 1px solid; }
+
+/* line 29, sass/ui/_article.scss */
+.link-permalink {
+  padding-left: 10px;
+  opacity: 0.2; }
+
+/* line 34, sass/ui/_article.scss */
 .category {
   color: #677295;
   font-size: 13px;
   font-weight: 400;
   opacity: 0.7;
   text-transform: uppercase; }
+
+/* line 42, sass/ui/_article.scss */
+.meta {
+  font-size: 12px;
+  color: #3f3f49;
+  opacity: 0.5; }
+  /* line 47, sass/ui/_article.scss */
+  .meta a, .meta a:visited {
+    text-decoration: none;
+    color: #3f3f49; }
+  /* line 52, sass/ui/_article.scss */
+  .meta a:hover {
+    border-bottom: 1px solid; }
 
 /*------------------------------------*\
     $FOOTER_UI
@@ -788,29 +817,30 @@ article a:hover {
 /* line 23, sass/ui/_footer.scss */
 .subscribe--icons img {
   display: inline;
-  float: right; }
+  float: right;
+  margin-right: 5px; }
 
-/* line 28, sass/ui/_footer.scss */
+/* line 29, sass/ui/_footer.scss */
 .subscribe-box {
   margin-bottom: 3px; }
 
-/* line 32, sass/ui/_footer.scss */
+/* line 33, sass/ui/_footer.scss */
 .subscribe-button {
   display: inline;
   float: right; }
 
-/* line 36, sass/ui/_footer.scss */
+/* line 37, sass/ui/_footer.scss */
 .footer {
   background-color: #3f3f49;
   color: white; }
-  /* line 40, sass/ui/_footer.scss */
+  /* line 41, sass/ui/_footer.scss */
   .footer a, .footer a:visited {
-    color: white; }
-  /* line 45, sass/ui/_footer.scss */
+    color: white !important; }
+  /* line 46, sass/ui/_footer.scss */
   .footer .nav li {
     margin-right: 20px; }
 
-/* line 51, sass/ui/_footer.scss */
+/* line 52, sass/ui/_footer.scss */
 .copyright {
   font-size: 12px;
   font-weight: 400;
