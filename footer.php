@@ -15,13 +15,30 @@
                     Want to hear more about Business, Design, and Technology? Get a summary of posts each Sunday.
                 </div>
                 <div class="subscribe--email">
-                    <input type="text" class="subscribe-box" placeholder="your email" />
+<!--                     <input type="text" class="subscribe-box" placeholder="your email" />
                     <input type="submit" value="Subscribe" class="subscribe-button">
+ -->                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                    <form action="http://marcelandkel.us1.list-manage.com/subscribe/post?u=693ab794c43a549ddd6097cfd&amp;id=bca220b637" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" placeholder="your email" class="required email subscribe-box" id="mce-EMAIL">
+                    </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_693ab794c43a549ddd6097cfd_bca220b637" value=""></div>
+                        <input type="hidden" name="SIGNUP" id="SIGNUP" value="bc-footer" />
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </form>
+                    </div>
+
+                    <!--End mc_embed_signup-->
                 </div>
                 <div class="subscribe--icons">
-                    <a href="http://behindcompanies.com/feed"><img src="wp-content/themes/behindcompanies-5/images/facebook.png"></a>
-                    <a href="http://twitter.com/behindcompanies"><img src="wp-content/themes/behindcompanies-5/images/twitter.png"></a>
-                    <a href="http://facebook.com/behindcompanies"><img src="wp-content/themes/behindcompanies-5/images/rss.png"></a>
+                    <a href="http://facebook.com/behindcompanies"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"></a>
+                    <a href="http://twitter.com/behindcompanies"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"></a>
+                    <a href="http://behindcompanies.com/feed"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.png"></a>
                 </div>
             </div>
         </div>
@@ -39,6 +56,28 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+<script>
+    $(document).ready(function() {
+        $(".js-nav-toggle").click(function() {
+            $(".js-nav").slideToggle("normal", function() {
+                easing : "easeOutSine"
+            });
+        });
+    });
+</script>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8513019-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 </body>
 </html>

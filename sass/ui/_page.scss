@@ -3,10 +3,34 @@
 \*------------------------------------*/
 html {
     font-family: $base-font-family;
-    background-color: $gray-lightest;
+    background-color: $black;
     color: $black;
 }
 
 body {
     border-top: 5px solid $purple;
+    background-color: $gray-lightest;
+}
+
+.paging-navigation {
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    a, a:visited {
+        color: $purple;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+    }
+}
+
+.nav-previous {
+    @include float(left);
+}
+
+.nav-next {
+    @include float(right);
 }

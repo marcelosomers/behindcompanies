@@ -16,7 +16,22 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); $loopcounter++; $timestamp = get_the_time('l') . get_the_time('M j, Y'); ?>
+
+				<?php if ($loopcounter  == 1) : // if it's the topmost post, then don't put in the article break class ?>
+
+				<span>
+					<?php if( $timeflag != $timestamp ) : ?>
+					<?php $timeflag = $timestamp; endif; ?>
+				</span>
+
+				<?php elseif ( in_category('2')) : // if it's an article do nothing - 3 in production, 3 on local ?>
+				<?php else : // if it's not an article and it's not the topmost post, then echo the date ?>
+
+				<?php if( $timeflag != $timestamp ) : ?>
+					<div class="home-dates"><?php the_date('F j, o') ?></div>
+					<?php $timeflag = $timestamp; endif; ?>
+				<?php endif; ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.

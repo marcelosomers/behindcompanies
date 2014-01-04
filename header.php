@@ -12,26 +12,59 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/jquery-2.0.3.min.js'></script>
+
 <?php wp_head(); ?>
+
+<!-- BuySellAds PRO Code -->
+<script type=""text/javascript"">
+(function(){
+    var bsa = document.createElement('script');
+        bsa.type = 'text/javascript';
+        bsa.async = true;
+        bsa.src = 'http://cdn.buysellads.com/ac/pro.js';
+    document.getElementsByTagName('head')[0].appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds PRO Ad Code -->
+
+<!-- Fusion Ads Tag -->
+    <script type="text/javascript">
+    (function(){
+      var fusion = document.createElement('script');
+      fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=178&rand=' + Math.floor(Math.random()*9999999);
+      fusion.async = true;
+      (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
+    })();</script>
 </head>
 
 <body <?php body_class(); ?>>
 	<header class="header">
         <div class="container">
-            <a href="/"><img src="wp-content/themes/behindcompanies-5/images/logo.png" alt="Behind Companies Logo" id="logo" /></a>
+            <a href="<?php bloginfo('wpurl'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Behind Companies Logo" id="logo" /></a>
         </div>
     </header>
 
-    <nav>
+    <nav class="mobile-hide">
         <ul class="nav container">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Subscribe</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Archive</a></li>
-            <li class="byline">By Marcelo Somers</li>
+            <li><a href="colophon/">About</a></li>
+            <li><a href="subscribe/">Subscribe</a></li>
+            <li><a href="sponsorship/">Advertise</a></li>
+            <li><a href="archive/">Archive</a></li>
+            <li class="byline"><a href="colophon/">By Marcelo Somers</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile-show">
+        <span class="mobile-show nav-title js-nav-toggle">Navigation &raquo;</span>
+        <ul class="nav nav--mobile js-nav">
+            <li><a href="colophon/">About</a></li>
+            <li><a href="subscribe/">Subscribe</a></li>
+            <li><a href="sponsorship/">Advertise</a></li>
+            <li><a href="archive/">Archive</a></li>
+            <li class="byline"><a href="colophon/">By Marcelo Somers</a></li>
         </ul>
     </nav>
 

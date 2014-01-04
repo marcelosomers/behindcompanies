@@ -1,0 +1,6 @@
+# Outstanding Items
+
+[ ] MailChimp Email Template
+[ ] 404 Page
+[ ] Archive Pages
+[ ] Retina Images

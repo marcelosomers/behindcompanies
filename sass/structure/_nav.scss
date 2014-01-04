@@ -32,10 +32,19 @@ nav {
             display:inline-block;
            *display:inline;
             zoom:1;
+
+            @media only screen and (max-width: $break-mobile) {
+                display: block;
+            }
         }
     }
 }
 
 .byline {
   @include float(right);
+  margin-right: 0;
+
+  @media only screen and (max-width: $break-mobile) {
+      @include float(none);
+  }
 }

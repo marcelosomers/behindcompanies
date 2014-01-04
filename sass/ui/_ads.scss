@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    $ADS_UI
+\*------------------------------------*/
+
+.sidebar {
+    margin-top: 50px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $purple;
+
+    a, a:visited {
+        color: $purple;
+        text-decoration: none;
+    }
+}
+
+.ad_source {
+    margin: 0.5em 0 30px;
+    font-size: 11px;
+}

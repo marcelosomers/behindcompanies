@@ -7,10 +7,19 @@
     border-top: 1px solid $gray-dark;
     background-color: $gray;
     overflow: hidden;
+
+    @media only screen and (max-width: $break-mobile) {
+        height: inherit;
+    }
 }
 
 .subscribe--text, .subscribe--email, .subscribe--icons {
     margin-top: 24px;
+
+    @media only screen and (max-width: $break-mobile) {
+        @include float(none);
+        display: block;
+    }
 }
 
 .subscribe--text {
@@ -20,9 +29,16 @@
 }
 
 .subscribe--icons {
+    overflow: hidden;
+
     img {
-        @include float(right);
+        text-align: right;
         margin-right: 5px;
+    }
+
+    @media only screen and (max-width: $break-mobile) {
+        padding: 10px 0;
+        text-align: center;
     }
 }
 
@@ -55,4 +71,8 @@
     text-transform: none;
     color: $gray-dark;
     @include float(right);
+
+    @media only screen and (max-width: $break-mobile) {
+      @include float(none);
+  }
 }

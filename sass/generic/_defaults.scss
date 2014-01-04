@@ -15,7 +15,7 @@ $base-line-height:  24px!default;
  * Base font-family.
  */
 $base-font-family:  'Proxima Nova', Helvetica, Arial, sans-serif!default;
-$serif-font-family: 'Freight Text Pro', Georgia, serif!default;
+$serif-font-family: "freight-text-pro", Georgia, sans-serif!default;
 $monospace-font: 'Source Code Pro', Monaco, monospace!default;
 
 
@@ -53,3 +53,4 @@ $white:         #ffffff!default;
 \*------------------------------------*/
 $break-full:    920px!default;
 $break-tablet:  767px!default;
+$break-mobile:  535px!default;

@@ -7,7 +7,7 @@ nav {
     background: $gray-light;
 }
 
-.nav {
+.nav, .nav-title {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -18,14 +18,43 @@ nav {
     }
 
     a:hover {
-        opacity: 0.7;
+        opacity: 0.5;
     }
 
     li {
         margin-right: 27px;
+        @media only screen and (max-width: $break-mobile) {
+            margin: 0;
+            border-bottom: 1px solid $gray-dark;
+            text-align: center;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
     }
+}
+
+.nav-title {
+    border-bottom: 1px solid $gray-dark;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+
+    @media only screen and (max-width: $break-mobile) {
+        display: inline;
+    }
+}
+
+.nav--mobile {
+    display: none;
 }
 
 .byline {
     opacity: 0.5;
+    margin-right: 0 !important;
+
+    a:hover {
+        opacity: 1;
+    }
 }

@@ -2,7 +2,7 @@
     $FORM_UI
 \*------------------------------------*/
 
-input[type='text'] {
+input[type='text'], .subscribe-box {
     padding: 9px 10px;
     border: 1px solid $gray-dark;
     font-size: 12px;
@@ -11,7 +11,7 @@ input[type='text'] {
     width: 100%;
 }
 
-input[type='submit'] {
+input[type='submit'], .subscribe-button {
     padding: 6px 10px;
     display: inline-block;
     border: 0;

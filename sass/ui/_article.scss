@@ -3,15 +3,22 @@
 \*------------------------------------*/
 
 article {
-    p {
+    p, ul {
         a, a:visited {
             color: $purple;
+            border-bottom: 1px solid;
             text-decoration: none;
         }
 
         a:hover {
-            border-bottom: 1px solid;
+            color: $purple-light;
         }
+    }
+
+    li {
+        margin-left: 1em;
+        line-height: 22px;
+        list-style: square;
     }
 }
 
@@ -52,4 +59,12 @@ article {
     a:hover {
         border-bottom: 1px solid;
     }
+}
+
+.home-dates {
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $gray-alt;
 }

@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $MOBILE_STYLES
+\*------------------------------------*/
+
+.mobile-show {
+    display: none;
+
+    @media only screen and (max-width: $break-mobile) {
+        display: block;
+    }
+}
+
+.mobile-hide {
+    @media only screen and (max-width: $break-mobile) {
+        display: none;
+    }
+}

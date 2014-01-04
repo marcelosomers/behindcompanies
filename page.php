@@ -28,8 +28,8 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</section>
+	</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

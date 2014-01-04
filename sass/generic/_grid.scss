@@ -20,6 +20,7 @@ $gutter-width: 2.272%;
 .content {
     width: 79.452%;
     margin-right: $gutter-width;
+    @include float(left);
 
     @media only screen and (max-width: $break-tablet) {
         width: 100%;
@@ -27,19 +28,44 @@ $gutter-width: 2.272%;
     }
 }
 
-.subscribe--text, .subscribe--email, .subscribe--icons {
-    margin-right: $gutter-width;
+.sidebar {
+    width: 130px;
     @include float(left);
 }
 
+.subscribe--text, .subscribe--email, .subscribe--icons {
+    margin-right: $gutter-width;
+    @include float(left);
+
+    @media only screen and (max-width: $break-mobile) {
+        @include float(none);
+    }
+}
+
+.subscribe {
+    clear: both;
+}
+
 .subscribe--text {
-    width: 48.863%
+    width: 48.863%;
+
+    @media only screen and (max-width: $break-mobile) {
+        width: 100%;
+    }
 }
 
 .subscribe--email {
     width: 31.818%;
+
+    @media only screen and (max-width: $break-mobile) {
+        width: 100%;
+    }
 }
 
 .subscribe--icons {
     width: 12.51%;
+
+    @media only screen and (max-width: $break-mobile) {
+        width: 100%;
+    }
 }
