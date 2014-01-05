@@ -14,7 +14,12 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_directory'); ?>/img/apple-touch-icon-precomposed.png">
+<meta property="og:image" content="http://behindcompanies.com/wp-content/themes/BC4.0/img/apple-touch-icon-precomposed.png" />
+
 <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/jquery-2.0.3.min.js'></script>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
 
