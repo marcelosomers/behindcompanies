@@ -79,5 +79,7 @@
   })();
 </script>
 
+<script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/retina-1.1.0.min.js'></script>
+
 </body>
 </html>

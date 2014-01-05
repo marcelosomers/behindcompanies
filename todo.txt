@@ -1,14 +1,16 @@
 # Outstanding Items
-
 [x] 404 Page
 [x] Archive Pages
-[ ] Retina Images
-[ ] Bulk update post format for Linked List items
+[X] Retina Images
 [ ] *Do the above item first!! Need to bulk convert post formats based on this* Test what happens when Articles and Linked List categories are deleted (on dev)
 [X] Fix footer subscribe links
 [X] Convert search file to Google search
 [X] Refactor the archive, content, and page templates (one & cat-archive)
 
+## Deployment
+[ ] Test retina images
+[ ] Bulk update post format for Linked List items
+[ ] Clean up categories
 
 ## Want to Try
 [ ] MailChimp Email Template
