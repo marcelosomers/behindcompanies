@@ -1,0 +1,1 @@
+<div class="meta"><?php the_time('F j, o') ?></div>

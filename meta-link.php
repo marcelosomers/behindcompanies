@@ -1,0 +1,1 @@
+<div class="meta"><a href="<?php the_permalink(); ?>"><?php the_time('F j, o') ?></a> &#9642; <a href="<?php the_linked_list_link() ?>">Source Article</a></div>

@@ -1,3 +1,11 @@
+<?php
+/**
+ * The Template for displaying all a link formatted posts.
+ *
+ * @package Behind Companies 5.0
+ */
+?>
+
 <article>
     <div class="category">
         <?php

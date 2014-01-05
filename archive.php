@@ -27,7 +27,7 @@ get_header(); ?>
         <div class="archive-category-box">
             <div class="archive-icon"><img src="<?php bloginfo('template_directory'); ?>/images/design.svg" alt="Business"></div>
             <div class="archive-category-description">
-                <h3><a href="category/design/">Design</a></h3>
+                <h3><a href="<?php echo home_url() ?>/category/design/">Design</a></h3>
                 <p>Articles and links spanning the gamut of design, user experience, and building delightful products.</p>
             </div>
         </div>

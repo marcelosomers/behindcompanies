@@ -1,5 +1,7 @@
 <?php
 /**
+ * The Template for displaying all a standard formatted posts.
+ *
  * @package Behind Companies 5.0
  */
 ?>
