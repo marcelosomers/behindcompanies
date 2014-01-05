@@ -36,9 +36,9 @@
                     <!--End mc_embed_signup-->
                 </div>
                 <div class="subscribe--icons">
-                    <a href="http://facebook.com/behindcompanies"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"></a>
+                    <a href="http://behindcompanies.com/feed"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"></a>
                     <a href="http://twitter.com/behindcompanies"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"></a>
-                    <a href="http://behindcompanies.com/feed"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.png"></a>
+                    <a href="http://facebook.com/behindcompanies"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.png"></a>
                 </div>
             </div>
         </div>

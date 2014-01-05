@@ -22,7 +22,7 @@ article {
     }
 }
 
-.title--article, .title--link {
+.title--article, .title--link, .title--archive {
     a {
         color: $black;
         text-decoration: none;
@@ -67,4 +67,31 @@ article {
     text-transform: uppercase;
     font-weight: 600;
     color: $gray-alt;
+}
+
+.title--archive {
+    font-size: 14px;
+}
+
+ul.archive-list {
+    list-style: none;
+    margin-bottom: 30px;
+
+    li {
+        line-height: 30px;
+        border-bottom: 1px solid $gray-dark;
+    }
+}
+
+.archive-date {
+    width: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.archive-link-img {
+    height: 17px;
+    opacity: 0.4;
 }

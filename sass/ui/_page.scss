@@ -34,3 +34,38 @@ body {
 .nav-next {
     @include float(right);
 }
+
+.archive-category-box {
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: block;
+}
+
+.archive-icon, .archive-category-description {
+    @include float(left);
+}
+
+.archive-icon {
+    margin-right: 20px;
+
+    img {
+        max-width: 60px;
+    }
+}
+
+.archive-category-description {
+    width: 80%;
+
+    h3 {
+        margin-top: 0;
+
+        a, a:visited {
+            color: $purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom: 1px solid;
+        }
+    }
+}

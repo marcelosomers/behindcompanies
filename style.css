@@ -777,6 +777,38 @@ body {
   display: inline;
   float: right; }
 
+/* line 38, sass/ui/_page.scss */
+.archive-category-box {
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: block; }
+
+/* line 44, sass/ui/_page.scss */
+.archive-icon, .archive-category-description {
+  display: inline;
+  float: left; }
+
+/* line 48, sass/ui/_page.scss */
+.archive-icon {
+  margin-right: 20px; }
+  /* line 51, sass/ui/_page.scss */
+  .archive-icon img {
+    max-width: 60px; }
+
+/* line 56, sass/ui/_page.scss */
+.archive-category-description {
+  width: 80%; }
+  /* line 59, sass/ui/_page.scss */
+  .archive-category-description h3 {
+    margin-top: 0; }
+    /* line 62, sass/ui/_page.scss */
+    .archive-category-description h3 a, .archive-category-description h3 a:visited {
+      color: #677295;
+      text-decoration: none; }
+    /* line 67, sass/ui/_page.scss */
+    .archive-category-description h3 a:hover {
+      border-bottom: 1px solid; }
+
 /*------------------------------------*\
     $PAGEHEAD
 \*------------------------------------*/
@@ -859,11 +891,11 @@ article li {
   list-style: square; }
 
 /* line 26, sass/ui/_article.scss */
-.title--article a, .title--link a {
+.title--article a, .title--link a, .title--archive a {
   color: #3f3f49;
   text-decoration: none; }
 /* line 31, sass/ui/_article.scss */
-.title--article a:hover, .title--link a:hover {
+.title--article a:hover, .title--link a:hover, .title--archive a:hover {
   border-bottom: 1px solid; }
 
 /* line 36, sass/ui/_article.scss */
@@ -899,6 +931,32 @@ article li {
   text-transform: uppercase;
   font-weight: 600;
   color: #a6a6a9; }
+
+/* line 72, sass/ui/_article.scss */
+.title--archive {
+  font-size: 14px; }
+
+/* line 76, sass/ui/_article.scss */
+ul.archive-list {
+  list-style: none;
+  margin-bottom: 30px; }
+  /* line 80, sass/ui/_article.scss */
+  ul.archive-list li {
+    line-height: 30px;
+    border-bottom: 1px solid #dfdfdf; }
+
+/* line 86, sass/ui/_article.scss */
+.archive-date {
+  width: 100px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  display: inline-block; }
+
+/* line 94, sass/ui/_article.scss */
+.archive-link-img {
+  height: 17px;
+  opacity: 0.4; }
 
 /*------------------------------------*\
     $FOOTER_UI
@@ -981,7 +1039,7 @@ article li {
     $FORM_UI
 \*------------------------------------*/
 /* line 5, sass/ui/_form.scss */
-input[type='text'], .subscribe-box {
+input[type='text'], input[type='search'], .subscribe-box {
   padding: 9px 10px;
   border: 1px solid #dfdfdf;
   font-size: 12px;
@@ -1004,6 +1062,15 @@ input[type='submit'], .subscribe-button {
   -o-border-radius: 6px;
   border-radius: 6px; }
 
+/* line 25, sass/ui/_form.scss */
+.search-field {
+  width: 96% !important;
+  margin-bottom: 30px; }
+
+/* line 30, sass/ui/_form.scss */
+.search-submit {
+  display: none !important; }
+
 /*------------------------------------*\
     $ADS_UI
 \*------------------------------------*/
@@ -1017,8 +1084,12 @@ input[type='submit'], .subscribe-button {
   .sidebar a, .sidebar a:visited {
     color: #677295;
     text-decoration: none; }
+  @media only screen and (max-width: 767px) {
+    /* line 5, sass/ui/_ads.scss */
+    .sidebar {
+      margin-top: 0; } }
 
-/* line 17, sass/ui/_ads.scss */
+/* line 21, sass/ui/_ads.scss */
 .ad_source {
   margin: 0.5em 0 30px;
   font-size: 11px; }

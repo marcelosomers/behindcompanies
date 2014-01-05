@@ -40,20 +40,20 @@
     })();</script>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 	<header class="header">
         <div class="container">
             <a href="<?php bloginfo('wpurl'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Behind Companies Logo" id="logo" /></a>
         </div>
     </header>
 
-    <nav class="mobile-hide">
+    <nav class="mobile-hide sticky-nav">
         <ul class="nav container">
-            <li><a href="colophon/">About</a></li>
-            <li><a href="subscribe/">Subscribe</a></li>
-            <li><a href="sponsorship/">Advertise</a></li>
-            <li><a href="archive/">Archive</a></li>
-            <li class="byline"><a href="colophon/">By Marcelo Somers</a></li>
+            <li><a href="<?php echo home_url() ?>/colophon/">About</a></li>
+            <li><a href="<?php echo home_url() ?>/subscribe/">Subscribe</a></li>
+            <li><a href="<?php echo home_url() ?>/sponsorship/">Advertise</a></li>
+            <li><a href="<?php echo home_url() ?>/archive/">Archive</a></li>
+            <li class="byline"><a href="<?php echo home_url() ?>/colophon/">By Marcelo Somers</a></li>
         </ul>
     </nav>
 

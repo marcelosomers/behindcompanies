@@ -2,7 +2,7 @@
     $FORM_UI
 \*------------------------------------*/
 
-input[type='text'], .subscribe-box {
+input[type='text'], input[type='search'], .subscribe-box {
     padding: 9px 10px;
     border: 1px solid $gray-dark;
     font-size: 12px;
@@ -20,4 +20,13 @@ input[type='submit'], .subscribe-button {
     font-weight: 700;
     color: $white;
     @include border-radius(6px);
+}
+
+.search-field {
+    width: 96% !important;
+    margin-bottom: 30px;
+}
+
+.search-submit {
+    display: none !important;
 }

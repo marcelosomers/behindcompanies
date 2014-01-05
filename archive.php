@@ -1,105 +1,65 @@
 <?php
 /**
- * The template for displaying Archive pages.
+ * The template for displaying all pages.
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
  * @package Behind Companies 5.0
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+        <h2 class="title title--article">Archive</h2>
 
-		<?php if ( have_posts() ) : ?>
+        <?php get_search_form(); ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-						if ( is_category() ) :
-							single_cat_title();
+        <div class="archive-category-box">
+            <div class="archive-icon"><img src="<?php bloginfo('template_directory'); ?>/images/business.svg" alt="Business"></div>
+            <div class="archive-category-description">
+                <h3><a href="<?php echo home_url() ?>/category/business/">Business</a></h3>
+                <p>The stories behind interesting companies, and what this site was founded on.</p>
+            </div>
+        </div>
 
-						elseif ( is_tag() ) :
-							single_tag_title();
+        <div class="archive-category-box">
+            <div class="archive-icon"><img src="<?php bloginfo('template_directory'); ?>/images/design.svg" alt="Business"></div>
+            <div class="archive-category-description">
+                <h3><a href="category/design/">Design</a></h3>
+                <p>Articles and links spanning the gamut of design, user experience, and building delightful products.</p>
+            </div>
+        </div>
 
-						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'behindcompanies-5' ), '<span class="vcard">' . get_the_author() . '</span>' );
+        <div class="archive-category-box">
+            <div class="archive-icon"><img src="<?php bloginfo('template_directory'); ?>/images/code.svg" alt="Business"></div>
+            <div class="archive-category-description">
+                <h3><a href="<?php echo home_url() ?>/category/code/">Code</a></h3>
+                <p>JavaScript, Ruby on Rails, PHP, and anything in between.</p>
+            </div>
+        </div>
 
-						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'behindcompanies-5' ), '<span>' . get_the_date() . '</span>' );
+        <div class="archive-category-box">
+            <div class="archive-icon"><img src="<?php bloginfo('template_directory'); ?>/images/guides.svg" alt="Business"></div>
+            <div class="archive-category-description">
+                <h3><a href="<?php echo home_url() ?>/category/guides/">Guides</a></h3>
+                <p>How to do cool stuff.</p>
+            </div>
+        </div>
 
-						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'behindcompanies-5' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'behindcompanies-5' ) ) . '</span>' );
+        <div class="archive-category-box">
+            <div class="archive-icon"><img src="<?php bloginfo('template_directory'); ?>/images/announcement.svg" alt="Business"></div>
+            <div class="archive-category-description">
+                <h3><a href="<?php echo home_url() ?>/category/announcement/">Announcements</a></h3>
+                <p>Anything related to this site itself or personal news.</p>
+            </div>
+        </div>
 
-						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'behindcompanies-5' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'behindcompanies-5' ) ) . '</span>' );
+        <p style="font-size: 11px;"><em>Icons from <a href="http://thenounproject.com/">The Noun Project</a></em></p>
 
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'behindcompanies-5' );
-
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', 'behindcompanies-5');
-
-						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'behindcompanies-5');
-
-						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'behindcompanies-5' );
-
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'behindcompanies-5' );
-
-						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'behindcompanies-5' );
-
-						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', 'behindcompanies-5' );
-
-						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', 'behindcompanies-5' );
-
-						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', 'behindcompanies-5' );
-
-						else :
-							_e( 'Archives', 'behindcompanies-5' );
-
-						endif;
-					?>
-				</h1>
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
-					endif;
-				?>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php behindcompanies_5_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
+        </section>
+    </div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
