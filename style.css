@@ -1,13 +1,10 @@
 @charset "UTF-8";
 /*
-Theme Name: Behind Companies 5.0
+Theme Name: Behind Companies
 Theme URI: http://underscores.me/
 Author: Marcelo Somers
 Author URI: http://behindcompanies.com/
-Description: Description
-Version: 1.0
-License:
-License URI:
+Version: 5.0
 */
 /*------------------------------------*\
     BEHIND COMPANIES
@@ -16,18 +13,11 @@ License URI:
  * Created by Marcelo Somers (@marcelosomers) for Behind Companies
  * (http://behindcompanies.com).
  *
- * This stylesheet is based on the principles of SMACSS (http://smacss.com/)
- * and Harry Roberts' CSS Guidelines
- * (https://github.com/csswizardry/CSS-Guidelines)
- *
  * LICENSE
- * [INSERT MY LICENSE HERE]
- */
-/*------------------------------------*\
-    $CONTENTS
-\*------------------------------------*/
-/**
- * CONTENTS............You're reading it!
+ * The source for this theme is published for educational purposes only.
+ * Functional derivatives works are permitted, however direct use of the design
+ * of this WordPress theme is forbidden.
+ *
  */
  /*------------------------------------*\
     $IMPORTS
