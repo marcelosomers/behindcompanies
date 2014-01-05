@@ -4,7 +4,7 @@
 http_path = "/"
 css_dir = "/"
 sass_dir = "sass"
-images_dir = "wp-content/themes/behindcompanies-5/images/"
+images_dir = "wp-content/themes/behindcompanies/images/"
 javascripts_dir = "js"
 fonts_dir = "fonts"
 
