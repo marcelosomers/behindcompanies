@@ -601,9 +601,9 @@ h3, h4 {
   font-size: 20px; }
 
 /* line 27, sass/generic/_typography.scss */
-p {
+p, ul {
   font-size: 16px;
-  line-height: 22px; }
+  line-height: 24px; }
 
 /* line 32, sass/generic/_typography.scss */
 blockquote {
@@ -715,7 +715,7 @@ nav {
 article {
   margin-bottom: 45px; }
   /* line 16, sass/structure/_article.scss */
-  article p {
+  article p, article ul {
     margin-bottom: 15px; }
   /* line 20, sass/structure/_article.scss */
   article img {
@@ -877,23 +877,22 @@ article p a:hover, article ul a:hover {
 /* line 18, sass/ui/_article.scss */
 article li {
   margin-left: 1em;
-  line-height: 22px;
   list-style: square; }
 
-/* line 26, sass/ui/_article.scss */
+/* line 25, sass/ui/_article.scss */
 .title--article a, .title--link a, .title--archive a {
   color: #3f3f49;
   text-decoration: none; }
-/* line 31, sass/ui/_article.scss */
+/* line 30, sass/ui/_article.scss */
 .title--article a:hover, .title--link a:hover, .title--archive a:hover {
   border-bottom: 1px solid; }
 
-/* line 36, sass/ui/_article.scss */
+/* line 35, sass/ui/_article.scss */
 .link-permalink {
   padding-left: 10px;
   opacity: 0.2; }
 
-/* line 41, sass/ui/_article.scss */
+/* line 40, sass/ui/_article.scss */
 .category {
   color: #677295;
   font-size: 13px;
@@ -901,21 +900,21 @@ article li {
   opacity: 0.7;
   text-transform: uppercase; }
 
-/* line 49, sass/ui/_article.scss */
+/* line 48, sass/ui/_article.scss */
 .meta {
   margin: -30px 0 30px;
   font-size: 12px;
   color: #3f3f49;
   opacity: 0.5; }
-  /* line 55, sass/ui/_article.scss */
+  /* line 54, sass/ui/_article.scss */
   .meta a, .meta a:visited {
     text-decoration: none;
     color: #3f3f49; }
-  /* line 60, sass/ui/_article.scss */
+  /* line 59, sass/ui/_article.scss */
   .meta a:hover {
     border-bottom: 1px solid; }
 
-/* line 65, sass/ui/_article.scss */
+/* line 64, sass/ui/_article.scss */
 .home-dates {
   margin-bottom: 15px;
   font-size: 13px;
@@ -923,20 +922,20 @@ article li {
   font-weight: 600;
   color: #a6a6a9; }
 
-/* line 73, sass/ui/_article.scss */
+/* line 72, sass/ui/_article.scss */
 .title--archive {
   font-size: 14px; }
 
-/* line 77, sass/ui/_article.scss */
+/* line 76, sass/ui/_article.scss */
 ul.archive-list {
   list-style: none;
   margin-bottom: 30px; }
-  /* line 81, sass/ui/_article.scss */
+  /* line 80, sass/ui/_article.scss */
   ul.archive-list li {
     line-height: 30px;
     border-bottom: 1px solid #dfdfdf; }
 
-/* line 87, sass/ui/_article.scss */
+/* line 86, sass/ui/_article.scss */
 .archive-date {
   width: 100px;
   font-size: 12px;
@@ -944,7 +943,7 @@ ul.archive-list {
   margin-right: 10px;
   display: inline-block; }
 
-/* line 95, sass/ui/_article.scss */
+/* line 94, sass/ui/_article.scss */
 .archive-link-img {
   height: 17px;
   opacity: 0.4; }
