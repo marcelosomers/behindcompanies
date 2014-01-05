@@ -15,9 +15,7 @@
                     Want to hear more about Business, Design, and Technology? Get a summary of posts each Sunday.
                 </div>
                 <div class="subscribe--email">
-<!--                     <input type="text" class="subscribe-box" placeholder="your email" />
-                    <input type="submit" value="Subscribe" class="subscribe-button">
- -->                    <!-- Begin MailChimp Signup Form -->
+                    <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup">
                     <form action="http://marcelandkel.us1.list-manage.com/subscribe/post?u=693ab794c43a549ddd6097cfd&amp;id=bca220b637" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="mc-field-group">
@@ -28,11 +26,15 @@
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_693ab794c43a549ddd6097cfd_bca220b637" value=""></div>
-                        <input type="hidden" name="SIGNUP" id="SIGNUP" value="bc-footer" />
+                        <?php
+                            // Get the page URL and strip the site url from it for the MailChimp Signup Reference Link
+                            $url = get_permalink();
+                            $url = str_replace(site_url(), "", $url);
+                        ?>
+                        <input type="hidden" name="SIGNUP" id="SIGNUP" value="footer-<?php echo $url ?>" />
                         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                     </form>
                     </div>
-
                     <!--End mc_embed_signup-->
                 </div>
                 <div class="subscribe--icons">
