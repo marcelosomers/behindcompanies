@@ -39,7 +39,10 @@
     </nav>
 
     <nav class="mobile-show">
-        <span class="mobile-show nav-title js-nav-toggle">Navigation &raquo;</span>
+        <div class="mobile-show nav-title js-nav-toggle">
+            Navigation
+            <img src="<?php bloginfo('template_directory'); ?>/images/down.svg" alt="Expand Menu" class="mobile-chevron" style="height: 6px;">
+        </div>
         <ul class="nav nav--mobile js-nav">
             <li><a href="colophon/">About</a></li>
             <li><a href="subscribe/">Subscribe</a></li>

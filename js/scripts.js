@@ -19,7 +19,7 @@ $(document).ready(function() {
   // Mobile Nav
   $(".js-nav-toggle").click(function() {
       $(".js-nav").slideToggle("normal", function() {
-          easing : "easeOutSine"
+          easing : "easeOutSine";
       });
   });
 });
