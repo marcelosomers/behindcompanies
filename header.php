@@ -34,7 +34,7 @@
             <li><a href="<?php echo home_url() ?>/subscribe/">Subscribe</a></li>
             <li><a href="<?php echo home_url() ?>/sponsorship/">Advertise</a></li>
             <li><a href="<?php echo home_url() ?>/archive/">Archive</a></li>
-            <li class="byline"><a href="<?php echo home_url() ?>/colophon/">By Marcelo Somers</a></li>
+            <li class="byline"><a href="<?php echo home_url() ?>/about/">By Marcelo Somers</a></li>
         </ul>
     </nav>
 
