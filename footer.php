@@ -61,16 +61,7 @@
 
 <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/jquery-2.0.3.min.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/retina-1.1.0.min.js'></script>
-
-<script>
-    $(document).ready(function() {
-        $(".js-nav-toggle").click(function() {
-            $(".js-nav").slideToggle("normal", function() {
-                easing : "easeOutSine"
-            });
-        });
-    });
-</script>
+<script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/scripts.js'></script>
 
 <script>
   var _gaq = _gaq || [];

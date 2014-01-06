@@ -21,27 +21,6 @@
 <link href='http://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
-
-<!-- BuySellAds PRO Code -->
-<script type=""text/javascript"">
-(function(){
-    var bsa = document.createElement('script');
-        bsa.type = 'text/javascript';
-        bsa.async = true;
-        bsa.src = 'http://cdn.buysellads.com/ac/pro.js';
-    document.getElementsByTagName('head')[0].appendChild(bsa);
-})();
-</script>
-<!-- End BuySellAds PRO Ad Code -->
-
-<!-- Fusion Ads Tag -->
-    <script type="text/javascript">
-    (function(){
-      var fusion = document.createElement('script');
-      fusion.src = window.location.protocol + '//adn.fusionads.net/api/1.0/ad.js?zoneid=178&rand=' + Math.floor(Math.random()*9999999);
-      fusion.async = true;
-      (document.head || document.getElementsByTagName('head')[0]).appendChild(fusion);
-    })();</script>
 </head>
 
 <body>
