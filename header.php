@@ -18,7 +18,6 @@
 <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_directory'); ?>/img/apple-touch-icon-precomposed.png">
 <meta property="og:image" content="http://behindcompanies.com/wp-content/themes/BC4.0/img/apple-touch-icon-precomposed.png" />
 
-
 <?php wp_head(); ?>
 </head>
 
@@ -31,7 +30,7 @@
 
     <nav class="mobile-hide sticky-nav">
         <ul class="nav container">
-            <li><a href="<?php echo home_url() ?>/colophon/">About</a></li>
+            <li><a href="<?php echo home_url() ?>/about/">About</a></li>
             <li><a href="<?php echo home_url() ?>/subscribe/">Subscribe</a></li>
             <li><a href="<?php echo home_url() ?>/sponsorship/">Advertise</a></li>
             <li><a href="<?php echo home_url() ?>/archive/">Archive</a></li>
