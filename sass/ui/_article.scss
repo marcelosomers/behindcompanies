@@ -15,9 +15,16 @@ article {
         }
     }
 
-    li {
+    ul, ol {
         margin-left: 1em;
+    }
+
+    ul {
         list-style: square;
+    }
+
+    ol {
+        list-style: decimal;
     }
 }
 
