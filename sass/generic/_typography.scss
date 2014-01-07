@@ -24,9 +24,13 @@ h3, h4 {
     font-size: 20px;
 }
 
-p, ul {
+p, ul, ol {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+}
+
+ol {
+    list-style: decimal;
 }
 
 blockquote {
