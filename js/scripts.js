@@ -17,9 +17,10 @@ $(document).ready(function() {
   })();
 
   // Mobile Nav
-  $(".js-nav-toggle").click(function() {
+  $(".js-nav-toggle").on('click', function() {
       $(".js-nav").slideToggle("normal", function() {
           easing : "easeOutSine";
       });
+      $(".nav-chevron").toggleClass('rotate');
   });
 });
