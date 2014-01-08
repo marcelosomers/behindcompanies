@@ -61,8 +61,10 @@
 
 <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/jquery-2.0.3.min.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/retina-1.1.0.min.js'></script>
+<script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/highlight.pack.js'></script>
 <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/scripts.min.js'></script>
 
+<script>hljs.initHighlightingOnLoad();</script>
 <script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-8513019-12']);

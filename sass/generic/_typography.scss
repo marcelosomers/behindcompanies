@@ -50,6 +50,7 @@ code {
 }
 
 pre {
+    margin-bottom: 15px;
     padding: 15px 20px;
     @include border-radius(3px);
     background: $black;
