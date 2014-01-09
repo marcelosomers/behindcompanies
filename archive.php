@@ -67,7 +67,8 @@ get_header(); ?>
         <p style="font-size: 11px;"><em>Icons from <a href="http://thenounproject.com/">The Noun Project</a></em></p>
 
         </section>
-    </div>
 
-<?php get_sidebar(); ?>
+    <?php get_sidebar(); ?>
+</div>
+
 <?php get_footer(); ?>
